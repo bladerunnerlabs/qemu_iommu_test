@@ -1,0 +1,6 @@
+#!/bin/sh
+
+switch=br0
+/sbin/ifconfig $1 promisc 0.0.0.0
+/usr/sbin/brctl addif ${switch} $1
+
